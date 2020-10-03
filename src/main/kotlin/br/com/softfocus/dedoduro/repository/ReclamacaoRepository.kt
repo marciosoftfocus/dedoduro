@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface ReclamacaoRepository : JpaRepository<Reclamacao, Int> {
-    fun findByTitulo(titulo: String): Reclamacao?
+    fun findByTitulo(titulo: String): List<Reclamacao>
 }
